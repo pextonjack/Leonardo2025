@@ -1,1 +1,2 @@
-# Leonardo2025
+# Leonardo 2025 Project
+* Space/Infinity
