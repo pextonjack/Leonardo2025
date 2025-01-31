@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f1ca63a91b17724bbd99c8fa67e0180, type: 3}
+  m_Name: CairnsPalette
+  m_EditorClassIdentifier: 
+  array:
+  - {fileID: 2100000, guid: 29caa18910ded4569a2979026b758050, type: 2}
+  - {fileID: 2100000, guid: 3ac97ff60b9714c8caef72c61b32bf4a, type: 2}
+  - {fileID: 2100000, guid: 623fac3bc3a5c4c0bba7da01037287bb, type: 2}
+  - {fileID: 2100000, guid: be400f9631f0c4b159a9b412f4883e3a, type: 2}
+  - {fileID: 2100000, guid: 69cd664acb0c04543b096cb9b2c64997, type: 2}
+  - {fileID: 2100000, guid: 5181b6e49ca9c4ec5a8fff36991ef7fd, type: 2}
+  - {fileID: 2100000, guid: fdca3ed590f7d4e19b35a2f43d7ac958, type: 2}
+  - {fileID: 2100000, guid: acb498dd75d2644bab994b47322ba3a5, type: 2}
+  - {fileID: 2100000, guid: f9db9fc399d65469da1fe6f9628f110e, type: 2}
+  - {fileID: 2100000, guid: 5a3b205073d6d4dfea96dc35d5afb791, type: 2}
+  - {fileID: 2100000, guid: f3fcc82caf449445283dd3ab6cf6915e, type: 2}
+  - {fileID: 2100000, guid: c4ff284fddb77448e82261d43d28f6d7, type: 2}
+  - {fileID: 2100000, guid: 8040ede0807f54266a254c2477a4cd67, type: 2}
+  - {fileID: 2100000, guid: cdddfc071c9224541a56a56ac9cfa5ab, type: 2}
