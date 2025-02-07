@@ -6,8 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Main.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Menu.unity
+    guid: 8fd2120e9d54c40008eb9098a171c43d
+  - enabled: 1
+    path: Assets/Levels/01_Hallway_YeohClassroom/Hallway_YeohClassroom.unity
+    guid: c059ede01cb5240e5a06f43890094e62
+  - enabled: 1
+    path: Assets/Levels/02_Wheat_Quad/Wheat_Quad.unity
+    guid: 2ebc36d76cd9a40f39cb5b04d89f1054
+  - enabled: 1
+    path: Assets/Levels/03_Flooded_Yeoh/Flooded_Yeoh.unity
+    guid: 21af55b4a6623435bab8a060ef868c00
+  - enabled: 1
+    path: Assets/Levels/04_Tunnels/Tunnels.unity
+    guid: 80c4cc37a6d734eb7bd6386135c5cf8b
+  - enabled: 1
+    path: Assets/Levels/05_Forest_Scotts/Forest_Scotts.unity
+    guid: 1c9d75dc5524348cd8f5aa6506986597
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 156660c35c0e147bda37c422bba2b394, type: 3}
   m_UseUCBPForAssetBundles: 0
