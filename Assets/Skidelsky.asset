@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f1ca63a91b17724bbd99c8fa67e0180, type: 3}
+  m_Name: Skidelsky
+  m_EditorClassIdentifier: 
+  array:
+  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 859bbc2e7c03a4913a52d2bd8bc33e30, type: 2}
+  - {fileID: 2100000, guid: 1ba21ff4cfd174e7fbc6c6d914d2fa66, type: 2}
+  - {fileID: 2100000, guid: 7fd297069c92f4c488bd60d55e4b81eb, type: 2}
+  - {fileID: 2100000, guid: 235c4a7c0da54403689d20e7468038c3, type: 2}
+  - {fileID: 2100000, guid: b902813f52b9c42a98aa6b48cdb013d2, type: 2}
+  - {fileID: 2100000, guid: 66b57e624fb1a4eed8263768392c82d6, type: 2}
+  - {fileID: 2100000, guid: ff186c923cc7040bfb2390e5b9452f21, type: 2}
+  - {fileID: 2100000, guid: 98b24d4cb8f494a19a8d13a588aedbcf, type: 2}
+  - {fileID: 2100000, guid: f7d08a87289194e60b83f852ad370bb7, type: 2}
+  - {fileID: 2100000, guid: 7e9cd5f726f4a421fbecddf0bacf7cef, type: 2}
+  - {fileID: 2100000, guid: 02aced0414b2941c1a68d87b167104eb, type: 2}
+  - {fileID: 2100000, guid: e41027f35883642eeb83fc4f5519246c, type: 2}
+  - {fileID: 2100000, guid: f1ed50f4c40ca40bc9f2de38f9d08541, type: 2}

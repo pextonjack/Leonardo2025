@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 2d2c0a0709a111840b59b66f8a5de72f
+timeCreated: 1518682776
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/Windridge City Assets/StaticObjects/Models/Buildings/Cine_Mark1/Materials/Cine_Mark1_Bricks_mat.mat
+  uploadId: 280742

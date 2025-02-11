@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e942c9bbe89b74b4bbf2379947b568fc
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/Windridge City Assets/StaticObjects/Prefabs/Buildings/prefab_Avalon_Tower2.prefab
+  uploadId: 280742

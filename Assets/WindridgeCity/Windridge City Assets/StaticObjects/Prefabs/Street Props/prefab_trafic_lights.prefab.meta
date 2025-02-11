@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 67c84dfde2509954d93178f31c566836
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/Windridge City Assets/StaticObjects/Prefabs/Street Props/prefab_trafic_lights.prefab
+  uploadId: 280742

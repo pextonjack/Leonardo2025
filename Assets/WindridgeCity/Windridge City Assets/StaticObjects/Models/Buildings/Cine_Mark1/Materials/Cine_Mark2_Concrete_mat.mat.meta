@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 599f37cea1760224e8a5013fe03c3bc2
+timeCreated: 1518682776
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/Windridge City Assets/StaticObjects/Models/Buildings/Cine_Mark1/Materials/Cine_Mark2_Concrete_mat.mat
+  uploadId: 280742

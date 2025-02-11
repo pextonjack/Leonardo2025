@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 28f7a06561e21b44a8c0f1df324ca347
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/Windridge City Assets/StaticObjects/Models/Buildings/FillerBuildings/Materials/M_filler_building_02.mat
+  uploadId: 280742

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 293866c6e800a424db8e73f2599b36c6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/Windridge City Assets/StaticObjects/Prefabs/Street Props/prefab_Sidewalkthing.prefab
+  uploadId: 280742

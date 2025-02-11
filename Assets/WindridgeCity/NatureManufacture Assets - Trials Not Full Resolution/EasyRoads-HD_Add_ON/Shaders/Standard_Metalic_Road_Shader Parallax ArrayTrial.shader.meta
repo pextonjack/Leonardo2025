@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 3fe1246dd651fc241b62b4faf71f50a6
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/NatureManufacture Assets - Trials Not Full Resolution/EasyRoads-HD_Add_ON/Shaders/Standard_Metalic_Road_Shader
+    Parallax ArrayTrial.shader
+  uploadId: 280742

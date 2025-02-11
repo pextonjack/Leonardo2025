@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f0b49c481d73d874bb79043194d74ebb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/Windridge City Assets/StaticObjects/Prefabs/Buildings/prefab_Cine_Mark1_Building_geo.prefab
+  uploadId: 280742

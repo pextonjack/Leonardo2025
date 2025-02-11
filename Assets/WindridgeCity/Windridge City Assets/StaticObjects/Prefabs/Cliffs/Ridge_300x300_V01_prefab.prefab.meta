@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 019b8f57a97879444baabf327dcdd787
+timeCreated: 1472116879
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/Windridge City Assets/StaticObjects/Prefabs/Cliffs/Ridge_300x300_V01_prefab.prefab
+  uploadId: 280742

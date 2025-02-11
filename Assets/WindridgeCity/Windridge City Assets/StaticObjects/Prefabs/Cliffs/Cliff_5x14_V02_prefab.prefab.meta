@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0a4877e6c02100445bad81efbe3a5a9f
+timeCreated: 1471942854
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/Windridge City Assets/StaticObjects/Prefabs/Cliffs/Cliff_5x14_V02_prefab.prefab
+  uploadId: 280742

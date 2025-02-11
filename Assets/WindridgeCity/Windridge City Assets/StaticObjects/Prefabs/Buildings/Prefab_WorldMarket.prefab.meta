@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 187bebc8b96650545b99cd4ca5bd8a6d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/Windridge City Assets/StaticObjects/Prefabs/Buildings/Prefab_WorldMarket.prefab
+  uploadId: 280742

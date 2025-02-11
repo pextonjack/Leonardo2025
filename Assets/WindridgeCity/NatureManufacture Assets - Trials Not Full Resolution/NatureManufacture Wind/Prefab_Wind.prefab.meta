@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 8dfd17a03533a0241b37daf2264ebdfd
+timeCreated: 1526026175
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/NatureManufacture Assets - Trials Not Full Resolution/NatureManufacture
+    Wind/Prefab_Wind.prefab
+  uploadId: 280742

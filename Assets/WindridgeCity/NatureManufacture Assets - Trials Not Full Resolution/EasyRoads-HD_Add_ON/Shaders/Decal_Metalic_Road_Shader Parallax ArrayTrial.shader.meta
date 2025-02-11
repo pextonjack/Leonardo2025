@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 11dbe796410e44848b75ba1918bced95
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/NatureManufacture Assets - Trials Not Full Resolution/EasyRoads-HD_Add_ON/Shaders/Decal_Metalic_Road_Shader
+    Parallax ArrayTrial.shader
+  uploadId: 280742

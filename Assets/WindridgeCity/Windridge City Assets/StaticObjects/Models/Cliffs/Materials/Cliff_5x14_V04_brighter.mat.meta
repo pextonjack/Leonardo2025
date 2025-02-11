@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bb90e76ff55e9c04b9fdabe4ed5ae49b
+timeCreated: 1464305849
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/Windridge City Assets/StaticObjects/Models/Cliffs/Materials/Cliff_5x14_V04_brighter.mat
+  uploadId: 280742

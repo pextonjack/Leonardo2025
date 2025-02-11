@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5fbf9402af177c044bd6df2418e6e37c
+timeCreated: 1516811471
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/Windridge City Assets/StaticObjects/Models/Buildings/Mattres_Firm/Materials/Mattres_Firm_signs.mat
+  uploadId: 280742

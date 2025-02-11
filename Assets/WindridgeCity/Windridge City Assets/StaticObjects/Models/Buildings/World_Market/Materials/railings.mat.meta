@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: defce9d5eaa2ac84aac6b37c48f83278
+timeCreated: 1520448392
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/Windridge City Assets/StaticObjects/Models/Buildings/World_Market/Materials/railings.mat
+  uploadId: 280742

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 74d59b3c4cfcb454ca11d80e8ca9d3ce
+timeCreated: 1516811471
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/Windridge City Assets/StaticObjects/Models/Buildings/Mattres_Firm/Materials/Mattres_Firm_glassl.mat
+  uploadId: 280742

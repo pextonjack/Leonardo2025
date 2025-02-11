@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b9bafe3da80b3c74aa6c44c9ab504ec1
+timeCreated: 1508327116
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/NatureManufacture Assets - Trials Not Full Resolution/Park Photo
+    Scanned Assets/Shaders/Standard_Metalic_UV_Free_Walls_and_Floors.shader
+  uploadId: 280742

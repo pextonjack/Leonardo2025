@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: e211d64e966868c47974c46e1cbfaef3
+timeCreated: 1519923619
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/Windridge City Assets/StaticObjects/Models/Props/TrafficLights/TrafficLightMap2_v1/Materials/TrafficLightMap2_v1_mat.mat
+  uploadId: 280742

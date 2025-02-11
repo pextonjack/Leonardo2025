@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: ac2edd268ec88564b9e681d56162efb1
+timeCreated: 1520243740
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/Windridge City Assets/StaticObjects/Models/Props/parkingAdd/Materials/parkingAdd_mat.mat
+  uploadId: 280742

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 71ad42ad3f2f9194798facbe362fae1b
+timeCreated: 1527188401
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132222
+  packageName: Windridge City
+  packageVersion: 1.0
+  assetPath: Assets/Windridge City Assets/Third-Party Notices.txt
+  uploadId: 280742
