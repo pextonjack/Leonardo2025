@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static bool CanPlayerMove => (!PauseManager.isPaused && SceneManager.GetActiveScene().name != "Menu");
+    public static bool CanPlayerMove => (!PauseManager.isPaused && SceneManager.GetActiveScene().name != "Menu" && !FadeManager.isFading);
 
     private static GameManager instance;
 
     public void Update()
     {
-        if (CanPlayerMove)
+        if (CanPlayerMove || FadeManager.isFading)
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;

@@ -7,11 +7,14 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Input Settings")]
+    public float maxInteractionDistance = 25f;
+    public LayerMask doNotRaycast;
     private PlayerInput playerInput;
 
     private InputAction moveAction;
     private InputAction jumpAction;
     private InputAction crouchAction;
+    private InputAction interactAction;
 
     //Assingables
     [Header("Assignables")]
@@ -54,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
     //Input
     float x, y;
     bool jumping, sprinting, crouching;
+    bool didInteractThisFrame;
 
     //Sliding
     private Vector3 normalVector = Vector3.up;
@@ -65,6 +69,7 @@ public class PlayerMovement : MonoBehaviour
         jumpAction = playerInput.actions["Jump"];
         moveAction = playerInput.actions["Move"];
         crouchAction = playerInput.actions["Crouch"];
+        interactAction = playerInput.actions["Interact"];
 
         rb = GetComponent<Rigidbody>();
     }
@@ -79,13 +84,11 @@ public class PlayerMovement : MonoBehaviour
     private void OnEnable()
     {
         playerInput.actions.Enable();
-        //playerControls.Enable();
     }
 
     private void OnDisable()
     {
         playerInput.actions.Disable();
-        //playerControls.Disable();
     }
 
     private void FixedUpdate()
@@ -95,11 +98,24 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        ManageInput();
-        Look();
+        if (GameManager.CanPlayerMove)
+        {
+            Look();
+            ManageInput();
+
+            if (didInteractThisFrame)
+            {
+                Interact();
+            }
+        }
+        else
+        {
+            x = 0f;
+            y = 0f;
+            jumping = false;
+        }
     }
 
-    
     private void ManageInput()
     {
         Vector2 move = moveAction.ReadValue<Vector2>();
@@ -107,30 +123,62 @@ public class PlayerMovement : MonoBehaviour
         x = move.x;
         y = move.y;
         jumping = jumpAction.IsPressed();
-        crouching = crouchAction.IsPressed();
 
+        /*
         if (crouchAction.WasPressedThisFrame())
         {
             StartCrouch();
+            crouching = true;
         }
         if (crouchAction.WasReleasedThisFrame())
         {
             StopCrouch();
+            crouching = false;
         }
-
-        /* Legacy Input System
-        x = Input.GetAxisRaw("Horizontal");
-        y = Input.GetAxisRaw("Vertical");
-        jumping = Input.GetButton("Jump");
-        crouching = Input.GetKey(KeyCode.LeftControl);
-
-        //Crouching
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-            StartCrouch();
-        if (Input.GetKeyUp(KeyCode.LeftControl))
-            StopCrouch();
         */
+
+        didInteractThisFrame = interactAction.WasPressedThisFrame();
     }
+
+    #region Interaction
+
+    private void Interact()
+    {
+        if (Physics.Raycast(playerCam.position, playerCam.forward, out RaycastHit hit, maxInteractionDistance, ~doNotRaycast))
+        {
+            if (hit.collider.TryGetComponent(out Interactable item))
+            {
+                item.Interact();
+            }
+        }
+    }
+
+    #endregion
+
+    #region Looking
+
+    private float desiredX;
+    private void Look()
+    {
+        float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.fixedDeltaTime * sensMultiplier;
+        float mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.fixedDeltaTime * sensMultiplier;
+
+        //Find current look rotation
+        Vector3 rot = playerCam.transform.localRotation.eulerAngles;
+        desiredX = rot.y + mouseX;
+
+        //Rotate, and also make sure we dont over- or under-rotate.
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+        //Perform the rotations
+        playerCam.transform.localRotation = Quaternion.Euler(xRotation, desiredX, 0);
+        orientation.transform.localRotation = Quaternion.Euler(0, desiredX, 0);
+    }
+
+    #endregion
+
+    #region Movement
 
     private void StartCrouch()
     {
@@ -224,25 +272,6 @@ public class PlayerMovement : MonoBehaviour
     private void ResetJump()
     {
         readyToJump = true;
-    }
-
-    private float desiredX;
-    private void Look()
-    {
-        float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.fixedDeltaTime * sensMultiplier;
-        float mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.fixedDeltaTime * sensMultiplier;
-
-        //Find current look rotation
-        Vector3 rot = playerCam.transform.localRotation.eulerAngles;
-        desiredX = rot.y + mouseX;
-
-        //Rotate, and also make sure we dont over- or under-rotate.
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-
-        //Perform the rotations
-        playerCam.transform.localRotation = Quaternion.Euler(xRotation, desiredX, 0);
-        orientation.transform.localRotation = Quaternion.Euler(0, desiredX, 0);
     }
 
     private void CounterMovement(float x, float y, Vector2 mag)
@@ -340,4 +369,5 @@ public class PlayerMovement : MonoBehaviour
         grounded = false;
     }
 
+    #endregion
 }

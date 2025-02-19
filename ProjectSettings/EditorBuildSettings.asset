@@ -18,8 +18,8 @@ EditorBuildSettings:
     path: Assets/Levels/03_Flooded_Yeoh/Flooded_Yeoh.unity
     guid: 21af55b4a6623435bab8a060ef868c00
   - enabled: 1
-    path: Assets/Levels/LEGACY04_Tunnels/Tunnels.unity
-    guid: 80c4cc37a6d734eb7bd6386135c5cf8b
+    path: Assets/Levels/04_Cryptic_Skidelsky/Cryptic_Skidelsky.unity
+    guid: 169cdd6e025ba4781bdb4de4bc70b417
   - enabled: 1
     path: Assets/Levels/05_Forest_Scotts/Forest_Scotts.unity
     guid: 1c9d75dc5524348cd8f5aa6506986597
