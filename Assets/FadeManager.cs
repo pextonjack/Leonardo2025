@@ -3,6 +3,7 @@ using UnityEngine;
 public class FadeManager : MonoBehaviour
 {
     public static bool isFading = false;
+    [SerializeField] bool fadeOnStart = true;
 
     private Animator anim;
 
@@ -10,7 +11,8 @@ public class FadeManager : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        FadeIn();
+        if (fadeOnStart)
+            FadeIn();
     }
 
     public void FadeIn()

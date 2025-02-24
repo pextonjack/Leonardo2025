@@ -49,7 +49,10 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator GotoGame()
     {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        // Special case: current scene is the last scene/level
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync((SceneManager.GetActiveScene().buildIndex != SceneManager.sceneCountInBuildSettings - 1) ? (SceneManager.GetActiveScene().buildIndex + 1) : 0);
+
+        //AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
         while (!asyncLoad.isDone)
         {
             yield return null; // Wait until the scene is fully loaded
