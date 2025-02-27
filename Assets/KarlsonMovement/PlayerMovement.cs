@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Input Settings")]
     public float maxInteractionDistance = 25f;
     public LayerMask doNotRaycast;
+    [SerializeField] GameObject interactIcon;
     private PlayerInput playerInput;
 
     private InputAction moveAction;
@@ -103,9 +104,18 @@ public class PlayerMovement : MonoBehaviour
             Look();
             ManageInput();
 
-            if (didInteractThisFrame)
+            if (CanInteract(out Interactable item))
             {
-                Interact();
+                interactIcon.SetActive(true);
+
+                if (didInteractThisFrame)
+                {
+                    Interact(item);
+                }
+            }
+            else
+            {
+                interactIcon.SetActive(false);
             }
         }
         else
@@ -113,6 +123,8 @@ public class PlayerMovement : MonoBehaviour
             x = 0f;
             y = 0f;
             jumping = false;
+
+            interactIcon.SetActive(false);
         }
     }
 
@@ -142,8 +154,23 @@ public class PlayerMovement : MonoBehaviour
 
     #region Interaction
 
-    private void Interact()
+    private bool CanInteract(out Interactable item)
     {
+        if (Physics.Raycast(playerCam.position, playerCam.forward, out RaycastHit hit, maxInteractionDistance, ~doNotRaycast))
+        {
+            if (hit.collider.TryGetComponent(out item))
+            {
+                return true;
+            }
+        }
+
+        item = null;
+        return false;
+    }
+
+    private void Interact(Interactable item)
+    {
+        /*
         if (Physics.Raycast(playerCam.position, playerCam.forward, out RaycastHit hit, maxInteractionDistance, ~doNotRaycast))
         {
             if (hit.collider.TryGetComponent(out Interactable item))
@@ -151,6 +178,8 @@ public class PlayerMovement : MonoBehaviour
                 item.Interact();
             }
         }
+        */
+        item.Interact();
     }
 
     #endregion
