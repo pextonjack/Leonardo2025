@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Menu.unity
-    guid: 8fd2120e9d54c40008eb9098a171c43d
+    guid: 5b69c9797455d4464bba19321a095566
   - enabled: 1
     path: Assets/Levels/01_Hallway_YeohClassroom/Hallway_YeohClassroom.unity
     guid: c059ede01cb5240e5a06f43890094e62
