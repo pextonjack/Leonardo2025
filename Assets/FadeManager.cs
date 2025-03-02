@@ -29,6 +29,14 @@ public class FadeManager : MonoBehaviour
     public void FadeOut()
     {
         anim.Play("FadeOut");
+        try
+        {
+            var windNoise = GetComponent<AudioSource>();
+            windNoise.Stop();
+            windNoise.Play();
+        }
+        catch (System.Exception) { }
+        
         isFading = true;
     }
 
