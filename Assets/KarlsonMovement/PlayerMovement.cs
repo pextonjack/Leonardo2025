@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private InputAction jumpAction;
     private InputAction crouchAction;
     private InputAction interactAction;
+    private InputAction sprintAction;
 
     //Assingables
     [Header("Assignables")]
@@ -71,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
         moveAction = playerInput.actions["Move"];
         crouchAction = playerInput.actions["Crouch"];
         interactAction = playerInput.actions["Interact"];
+        sprintAction = playerInput.actions["Sprint"];
 
         rb = GetComponent<Rigidbody>();
     }
@@ -135,6 +137,8 @@ public class PlayerMovement : MonoBehaviour
         x = move.x;
         y = move.y;
         jumping = jumpAction.IsPressed();
+
+        sprinting = sprintAction.IsPressed();
 
         /*
         if (crouchAction.WasPressedThisFrame())
@@ -244,7 +248,7 @@ public class PlayerMovement : MonoBehaviour
         if (readyToJump && jumping) Jump();
 
         //Set max speed
-        float maxSpeed = this.maxSpeed;
+        float maxSpeed = sprinting ? 2 * this.maxSpeed : this.maxSpeed;
 
         //If sliding down a ramp, add force down so player stays grounded and also builds speed
         if (crouching && grounded && readyToJump)
@@ -325,10 +329,10 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Limit diagonal running. This will also cause a full stop if sliding fast and un-crouching, so not optimal.
-        if (Mathf.Sqrt((Mathf.Pow(rb.linearVelocity.x, 2) + Mathf.Pow(rb.linearVelocity.z, 2))) > maxSpeed)
+        if (Mathf.Sqrt((Mathf.Pow(rb.linearVelocity.x, 2) + Mathf.Pow(rb.linearVelocity.z, 2))) > (sprinting ? maxSpeed * 2 : maxSpeed))
         {
             float fallspeed = rb.linearVelocity.y;
-            Vector3 n = rb.linearVelocity.normalized * maxSpeed;
+            Vector3 n = rb.linearVelocity.normalized * (sprinting ? maxSpeed * 2 : maxSpeed);
             rb.linearVelocity = new Vector3(n.x, fallspeed, n.z);
         }
     }

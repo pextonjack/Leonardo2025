@@ -9,4 +9,9 @@ public class MainMenuManager : MonoBehaviour
         //StartCoroutine(GameManager.Instance.GotoGame());
         fadeManager.FadeOut();
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

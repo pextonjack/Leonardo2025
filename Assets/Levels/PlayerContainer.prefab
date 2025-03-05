@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.9, z: 0.5}
+  m_LocalScale: {x: 0.5, y: 0.8, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5279102832874455819}
@@ -55,11 +55,12 @@ MonoBehaviour:
   doNotRaycast:
     serializedVersion: 2
     m_Bits: 0
+  interactIcon: {fileID: 8158469180540136217}
   playerCam: {fileID: 8212832973307260880}
   orientation: {fileID: 5279102832874455819}
   sensMultiplier: 1.5
   moveSpeed: 1125
-  maxSpeed: 4
+  maxSpeed: 2
   grounded: 0
   whatIsGround:
     serializedVersion: 2
@@ -68,8 +69,7 @@ MonoBehaviour:
   maxSlopeAngle: 35
   slideForce: 400
   slideCounterMovement: 0.2
-  jumpForce: 200
-  interactIcon: {fileID: 8158469180540136217}
+  jumpForce: 150
 --- !u!33 &6664841848299568529
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -244,7 +244,7 @@ Transform:
   m_GameObject: {fileID: 2617351292563310516}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.65, z: 0}
+  m_LocalPosition: {x: 0, y: 0.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
