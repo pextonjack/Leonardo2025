@@ -1,4 +1,4 @@
-// Some stupid rigidbody based movement by Dani
+// Based on Dani's Karlson Rigidbody movement
 
 using System;
 using UnityEngine;
